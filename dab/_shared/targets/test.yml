@@ -7,6 +7,7 @@ targets:
 
     variables:
       catalog: finance_test
+      environment: test
       pause_status: UNPAUSED
 
     workspace:

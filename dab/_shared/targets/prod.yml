@@ -8,6 +8,7 @@ targets:
     variables:
       catalog: finance_prod
       pause_status: UNPAUSED
+      environment: prod
 
     workspace:
       host: https://dbc-5346a843-c2e6.cloud.databricks.com/

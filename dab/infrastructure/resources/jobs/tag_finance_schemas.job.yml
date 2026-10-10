@@ -4,6 +4,7 @@ resources:
       name: tag_finance_schemas
       tags:
         Finance: ""
+        environment: ${var.environment}
       tasks:
         - task_key: apply_governed_tags
           notebook_task:
