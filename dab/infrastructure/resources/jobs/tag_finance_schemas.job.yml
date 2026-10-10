@@ -10,6 +10,6 @@ resources:
             notebook_path: ../../src/tag_finance_schemas.py
             base_parameters:
               catalog: ${var.catalog}
-              crm_bronze_schema: ${resources.schemas.crm_bronze.name}
-              crm_silver_schema: ${resources.schemas.crm_silver.name}
-              crm_gold_schema: ${resources.schemas.crm_gold.name}
+              erp_bronze_schema: ${resources.schemas.erp_bronze.name}
+              erp_silver_schema: ${resources.schemas.erp_silver.name}
+              erp_gold_schema: ${resources.schemas.erp_gold.name}

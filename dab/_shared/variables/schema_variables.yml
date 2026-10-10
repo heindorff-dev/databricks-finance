@@ -1,7 +1,7 @@
 variables:
-  crm_bronze_schema: 
-    default: "crm_bronze"
-  crm_silver_schema: 
-    default: "crm_silver"
-  crm_gold_schema:
-    default: "crm_gold"
+  erp_bronze_schema:
+    default: "erp_bronze"
+  erp_silver_schema:
+    default: "erp_silver"
+  erp_gold_schema:
+    default: "erp_gold"

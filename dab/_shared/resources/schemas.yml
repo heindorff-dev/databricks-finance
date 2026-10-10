@@ -1,25 +1,25 @@
 resources:
   schemas:
-    crm_bronze:
-      name: crm_bronze
+    erp_bronze:
+      name: ${var.erp_bronze_schema}
       catalog_name: ${var.catalog}
-      comment: "CRM schema for bronze data"
+      comment: "Finance ERP bronze data"
       grants:
-          - principal: grp-finance-bronze-reader
-            privileges: [SELECT, USE_SCHEMA]
+        - principal: grp-finance-bronze-reader
+          privileges: [SELECT, USE_SCHEMA]
 
-    crm_silver:
-        name: crm_silver
-        catalog_name: ${var.catalog}
-        comment: "CRM schema for silver data"
-        grants:
-            - principal: grp-finance-silver-reader
-              privileges: [SELECT, USE_SCHEMA]
-
-    crm_gold:
-      name: crm_gold
+    erp_silver:
+      name: ${var.erp_silver_schema}
       catalog_name: ${var.catalog}
-      comment: "CRM schema for gold data"
+      comment: "Finance ERP silver data"
       grants:
-          - principal: grp-finance-gold-reader
-            privileges: [SELECT, USE_SCHEMA]
+        - principal: grp-finance-silver-reader
+          privileges: [SELECT, USE_SCHEMA]
+
+    erp_gold:
+      name: ${var.erp_gold_schema}
+      catalog_name: ${var.catalog}
+      comment: "Finance ERP gold data"
+      grants:
+        - principal: grp-finance-gold-reader
+          privileges: [SELECT, USE_SCHEMA]

@@ -2,6 +2,7 @@ targets:
   dev: 
     mode: development
     default: true
+
     permissions:
       - group_name: grp-developer
         level: CAN_MANAGE
@@ -9,9 +10,9 @@ targets:
     variables:
       catalog: finance_dev
       pause_status: PAUSED
-      crm_bronze_schema: "dev_${workspace.current_user.short_name}_crm_bronze"
-      crm_silver_schema: "dev_${workspace.current_user.short_name}_crm_silver"
-      crm_gold_schema: "dev_${workspace.current_user.short_name}_crm_gold"
+      erp_bronze_schema: "dev_${workspace.current_user.short_name}_erp_bronze"
+      erp_silver_schema: "dev_${workspace.current_user.short_name}_erp_silver"
+      erp_gold_schema: "dev_${workspace.current_user.short_name}_erp_gold"
 
     workspace:
       host: https://dbc-5346a843-c2e6.cloud.databricks.com/
