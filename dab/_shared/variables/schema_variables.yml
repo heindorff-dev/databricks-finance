@@ -1,0 +1,7 @@
+variables:
+  crm_bronze_schema: 
+    default: "crm_bronze"
+  crm_silver_schema: 
+    default: "crm_silver"
+  crm_gold_schema:
+    default: "crm_gold"

@@ -1,0 +1,8 @@
+bundle: 
+  name: crm_bundle
+  engine: direct
+
+include:
+  - ../_shared/targets/*.yml
+  - ../_shared/variables/*.yml
+  - resources/jobs/*.job.yml

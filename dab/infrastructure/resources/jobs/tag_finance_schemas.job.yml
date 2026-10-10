@@ -1,0 +1,15 @@
+resources:
+  jobs:
+    tag_finance_schemas:
+      name: tag_finance_schemas
+      tags:
+        Finance: ""
+      tasks:
+        - task_key: apply_governed_tags
+          notebook_task:
+            notebook_path: ../../src/tag_finance_schemas.py
+            base_parameters:
+              catalog: ${var.catalog}
+              crm_bronze_schema: ${resources.schemas.crm_bronze.name}
+              crm_silver_schema: ${resources.schemas.crm_silver.name}
+              crm_gold_schema: ${resources.schemas.crm_gold.name}
